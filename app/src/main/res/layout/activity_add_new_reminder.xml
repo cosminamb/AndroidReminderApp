@@ -1,0 +1,90 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blueMedium"
+    >
+
+
+    <EditText
+        android:id="@+id/reminder_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Reminder name"
+        android:layout_marginTop="40dp"
+        />
+
+    <TextView
+        android:text="TEST1"
+        android:id="@+id/reminder_time"
+        android:layout_width="275dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/reminder_name"
+        android:layout_marginTop="25dp"
+        />
+
+    <Button
+        android:id="@+id/set_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blueDark"
+        android:text="Pick Date"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@+id/reminder_date"
+        android:layout_below="@+id/reminder_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"
+
+        />
+
+
+
+    <TextView
+        android:text="TEST2"
+        android:id="@+id/reminder_date"
+        android:layout_width="275dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/reminder_time"
+        android:layout_marginTop="25dp"
+        />
+
+    <Button
+        android:id="@+id/set_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blueDark"
+        android:text="Pick Time"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@+id/reminder_time"
+        android:layout_below="@+id/set_date"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+
+        />
+
+
+
+
+    <Button
+        android:id="@+id/set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blueDark"
+        android:text="set"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/time_picker"
+        android:layout_centerInParent="true"/>
+
+
+
+
+
+
+
+</RelativeLayout>
